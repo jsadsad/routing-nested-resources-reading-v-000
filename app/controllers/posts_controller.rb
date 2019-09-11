@@ -1,7 +1,11 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    if params[:author_id]
+      @post = Author.find(params[:author_id]).posts
+    else
+      @post = Post.all
+    end
   end
 
   def show

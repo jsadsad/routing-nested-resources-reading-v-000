@@ -4,7 +4,7 @@ class AuthorsController < ApplicationController
     @author = Author.find(params[:id])
   end
 
-  def post_index
+  def posts_index
     @author = Author.find(params[:id])
     @post = @author.posts
     render template: 'posts/index'

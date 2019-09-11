@@ -2534,3 +2534,7 @@ app/controllers/authors_controller.rb:4:in `show'
   Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.4ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Josh"], ["created_at", "2019-09-11 01:13:48.578477"], ["updated_at", "2019-09-11 01:13:48.578477"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Test"], ["description", "oh lord"], ["created_at", "2019-09-11 01:13:48.601525"], ["updated_at", "2019-09-11 01:13:48.601525"], ["author_id", 13]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
